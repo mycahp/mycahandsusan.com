@@ -3,7 +3,7 @@
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:_site/css --watch",
     "start": "npm run watch:eleventy & npm run watch:sass",
-    "build:netlify": "eleventy & sass sass:_site/css"
+    "build:netlify": "eleventy; sass sass:_site/css"
   },
   "dependencies": {
     "sass": "^1.49.0"
