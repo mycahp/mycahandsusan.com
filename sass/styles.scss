@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Handlee&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Oooh+Baby&display=swap');
 
 $screen-xs-min: 768px;
 $screen-sm-min: 576px;
@@ -11,71 +11,32 @@ $screen-xxl-min: 1400px;
   --dark-purple: #1b1b3a;
   --light-purple: #693668;
   --pink: #a74482;
+  --dark-red: #972529;
+  --dark-blue: #1d3354;
   --white: #fff;
 }
 
 html,
 body {
   height: 100%;
+  background-color: var(--dark-blue) !important;
+  background: url(/img/cream-pixels.png);
 }
 
 .main {
-
   padding: 25px;
-  
-  background: linear-gradient(rgba(#1b1b3a, 0.8), rgba(#1b1b3a, 0.8)),
-  url("/img/mycahandsusancollage0.5x.jpg");
 
-  @media (min-width: $screen-md-min) {
-    background: linear-gradient(rgba(#1b1b3a, 0.8), rgba(#1b1b3a, 0.8)),
-      url("/img/mycahandsusancollage0.75x.jpg");
+  .hero-text {
+    object {
+      width: 100%;
+      max-height: 75vh;
+    }
   }
 
-  @media (min-width: $screen-lg-min) {
-    background: linear-gradient(rgba(#1b1b3a, 0.8), rgba(#1b1b3a, 0.8)),
-      url("/img/mycahandsusancollage.jpg");
-  }
-
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-
-  height: 100%;
-
-  .text {
-    display: grid;
-    gap: 25px;
-    height: 100%;
+  .tag-text {
+    font-family: 'Arvo', serif;
+    color: var(--white);
     text-align: center;
-
-    h1 {
-      font-family: "Sacramento", cursive;
-      color: var(--white);
-      font-size: 5rem;
-      align-self: end;
-
-      .name {
-        font-family: 'Courgette', cursive;
-        display: block;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        font-weight: bold;
-        // font-family: "Arvo", serif;
-      }
-
-      .small {
-        font-size: 2.5rem;
-      }
-    }
-
-    h2 {
-      font-family: "Montserrat", sans-serif;
-      color: var(--white);
-      font-weight: 300;
-
-      .heart {
-        color: var(--pink);
-      }
-    }
+    margin-top: 100px;
   }
 }
